@@ -1,0 +1,42 @@
+{
+  "name": "@journey-to-code/open-is-url",
+  "version": "1.0.0",
+  "description": "Validates absolute URLs with configurable protocols and optional relative URL support.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "npm test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/journey-to-code-org/open.is-url.git"
+  },
+  "bugs": {
+    "url": "https://github.com/journey-to-code-org/open.is-url/issues"
+  },
+  "homepage": "https://github.com/journey-to-code-org/open.is-url#readme",
+  "keywords": [
+    "url",
+    "validation",
+    "web"
+  ],
+  "license": "MIT",
+  "sideEffects": false
+}

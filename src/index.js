@@ -1,0 +1,1 @@
+export function isUrl(v,o={}){if(typeof v!=="string"||v.trim()!==v||!v)return false;const protocols=o.protocols??["http:","https:"];if(o.allowRelative&&/^[/?#]/u.test(v)){try{new URL(v,"https://example.invalid");return true;}catch{return false;}}try{const u=new URL(v);return protocols.includes(u.protocol)&&(!o.requireHostname===true||u.hostname.length>0);}catch{return false;}}
